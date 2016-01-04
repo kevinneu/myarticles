@@ -34,10 +34,21 @@
 \pagestyle{empty} % Suppress page numbers
 
 %% Font setting
-%% Roman Character Fonts.
-\setmainfont{Times New Roman}
+%% Default font
+\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmonofont{STFangsong}
+\setCJKfamilyfont{zhsong}{STSong}
+\setCJKfamilyfont{zhhei}{STHeiti}
+\setCJKfamilyfont{zhfs}{STFangsong}
+\setCJKfamilyfont{zhkai}{STKaiti}
 
 
-%% CJK Character Fonts.
-\setCJKmainfont{STHeiti}
+\NewDocumentCommand \songti {}{\CJKfamily{zhsong}}
+\NewDocumentCommand \heiti {}{\CJKfamily{zhhei}}
+\NewDocumentCommand \fangsong {}{\CJKfamily{zhfs}}
+\NewDocumentCommand \kaiti {}{\CJKfamily{zhkai}}
+
+
+
 
