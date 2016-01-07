@@ -35,11 +35,14 @@
 
 %% Font setting
 %% Default font
-\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
-\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+%%\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+%%\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+\setCJKmainfont[BoldFont=STXihei,ItalicFont=STKaiti]{STSong}
+\setCJKsansfont[BoldFont=STXihei]{STXihei}
 \setCJKmonofont{STFangsong}
 \setCJKfamilyfont{zhsong}{STSong}
-\setCJKfamilyfont{zhhei}{STHeiti}
+%%\setCJKfamilyfont{zhhei}{STHeiti}
+\setCJKfamilyfont{zhhei}{STXihei}
 \setCJKfamilyfont{zhfs}{STFangsong}
 \setCJKfamilyfont{zhkai}{STKaiti}
 
@@ -48,6 +51,8 @@
 \NewDocumentCommand \heiti {}{\CJKfamily{zhhei}}
 \NewDocumentCommand \fangsong {}{\CJKfamily{zhfs}}
 \NewDocumentCommand \kaiti {}{\CJKfamily{zhkai}}
+
+
 
 
 
